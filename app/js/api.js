@@ -160,3 +160,7 @@ export function getOpportunityShareTeam(team, view = "all") {
     `/api/opportunity-share/${encodeURIComponent(team)}?${q.toString()}`
   );
 }
+
+export function refreshData() {
+  return api("/api/refresh", { method: "POST", body: "{}" });
+}

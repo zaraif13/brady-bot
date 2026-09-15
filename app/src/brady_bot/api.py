@@ -350,6 +350,38 @@ def meta_week():
         }
 
 
+@app.post("/api/refresh")
+def refresh_data():
+    """Force nflverse sources to refetch now, bypassing their normal cache TTL.
+
+    Odds are deliberately excluded — same convention as lineup pick's plain
+    no_cache flag — since refreshing odds burns paid API quota and needs the
+    explicit refresh_odds opt-in instead.
+    """
+    season = _cfg.league.season
+    loaders = {
+        "schedules": nflverse.load_schedules,
+        "player_stats": nflverse.load_player_stats,
+        "team_stats": nflverse.load_team_stats,
+        "snap_counts": nflverse.load_snap_counts,
+        "injuries": nflverse.load_injuries,
+        "depth_charts": nflverse.load_depth_charts,
+        "pbp": nflverse.load_pbp,
+    }
+    sources: dict[str, str] = {}
+    for name, loader in loaders.items():
+        try:
+            loader(_cache, [season], no_cache=True)
+            sources[name] = "ok"
+        except Exception as e:
+            sources[name] = f"error: {e}"
+    return {
+        "season": season,
+        "refreshed_at": datetime.now(timezone.utc).isoformat(),
+        "sources": sources,
+    }
+
+
 @app.get("/api/players/search")
 def players_search(q: str = "", slot: str = "BN"):
     if len(q.strip()) < 2:
