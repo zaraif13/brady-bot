@@ -1,0 +1,14 @@
+data/cache/
+data/predictions.jsonl
+data/api_keys.json
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+dist/
+build/
+.DS_Store

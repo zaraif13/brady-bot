@@ -1,0 +1,16 @@
+roster:
+  - {name: "Kyler Murray", team: ARI, position: QB}
+  - {name: "Bijan Robinson", team: ATL, position: RB}
+  - {name: "Kenneth Walker III", team: SEA, position: RB}
+  - {name: "Ladd McConkey", team: LAC, position: WR}
+  - {name: "Parker Washington", team: JAX, position: WR}
+  - {name: "Isaiah Likely", team: BAL, position: TE}
+  - {name: "Luther Burden III", team: CHI, position: WR}
+  - {name: "Ka'imi Fairbairn", team: HOU, position: K}
+  - {name: "New York Jets", team: NYJ, position: DEF}
+  - {name: "Tony Pollard", team: TEN, position: RB}
+  - {name: "RJ Harvey", team: DEN, position: RB}
+  - {name: "Chigoziem Okonkwo", team: TEN, position: TE}
+  - {name: "Emmett Johnson", team: NE, position: RB}
+  - {name: "Jordan Love", team: GB, position: QB}
+  - {name: "Seattle Seahawks", team: SEA, position: DEF}

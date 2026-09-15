@@ -1,0 +1,38 @@
+# ESPN preseason O-line rankings, 2026. Rank 1 = best line.
+# Team codes are canonical (WSH normalized to WAS).
+# Quote NO/YES/ON/OFF — YAML 1.1 otherwise coerces them to booleans.
+# Consumed by: RB picker Step 5, D/ST picker Step 4.
+# Spec: docs/lineup/lineup-picker-OL.md
+oline_ranks:
+  DEN: 1
+  PHI: 2
+  CHI: 3
+  BUF: 4
+  LAR: 5
+  SF: 6
+  TB: 7
+  SEA: 8
+  BAL: 9
+  LAC: 10
+  MIN: 11
+  ATL: 12
+  DAL: 13
+  NE: 14
+  NYJ: 15
+  ARI: 16
+  DET: 17
+  NYG: 18
+  IND: 19
+  "NO": 20
+  LV: 21
+  CAR: 22
+  JAX: 23
+  KC: 24
+  GB: 25
+  TEN: 26
+  MIA: 27
+  CLE: 28
+  PIT: 29
+  CIN: 30
+  WAS: 31
+  HOU: 32

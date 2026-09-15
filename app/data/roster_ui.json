@@ -1,0 +1,172 @@
+{
+  "week": 1,
+  "bn_extra": 0,
+  "ir_extra": 0,
+  "slots": [
+    {
+      "slot": "QB",
+      "player": {
+        "player_id": "00-0036389",
+        "name": "Jalen Hurts",
+        "position": "QB",
+        "team": "PHI",
+        "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/xow5yvxjeqa6witmofmp",
+        "opponent": "WAS"
+      }
+    },
+    {
+      "slot": "RB1",
+      "player": {
+        "player_id": "00-0038542",
+        "name": "Bijan Robinson",
+        "position": "RB",
+        "team": "ATL",
+        "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/esii5yb8yn9edboi4mlq",
+        "opponent": "PIT"
+      }
+    },
+    {
+      "slot": "RB2",
+      "player": {
+        "player_id": "00-0040122",
+        "name": "Ashton Jeanty",
+        "position": "RB",
+        "team": "LV",
+        "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/syspis1mntov9kgspb7r",
+        "opponent": "MIA"
+      }
+    },
+    {
+      "slot": "WR1",
+      "player": {
+        "player_id": "00-0035676",
+        "name": "A.J. Brown",
+        "position": "WR",
+        "team": "NE",
+        "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/qfhvjyssf0lwsh0kienp",
+        "opponent": "SEA"
+      }
+    },
+    {
+      "slot": "WR2",
+      "player": {
+        "player_id": "00-0039915",
+        "name": "Ladd McConkey",
+        "position": "WR",
+        "team": "LAC",
+        "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/q2sk7yforrkiusvruo1o",
+        "opponent": "ARI"
+      }
+    },
+    {
+      "slot": "TE",
+      "player": {
+        "player_id": "00-0039065",
+        "name": "Sam LaPorta",
+        "position": "TE",
+        "team": "DET",
+        "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/wxlk7ysg2nfq6h6ntdcu",
+        "opponent": "NO"
+      }
+    },
+    {
+      "slot": "DEF",
+      "player": {
+        "player_id": "DEF-PHI",
+        "name": "Philadelphia Eagles",
+        "position": "DEF",
+        "team": "PHI",
+        "headshot": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
+        "opponent": "WAS"
+      }
+    },
+    {
+      "slot": "K",
+      "player": {
+        "player_id": "00-0039409",
+        "name": "Cam Little",
+        "position": "K",
+        "team": "JAX",
+        "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/mc9goepr7mglrx6ek1fi",
+        "opponent": "CLE"
+      }
+    },
+    {
+      "slot": "FLEX",
+      "player": {
+        "player_id": "00-0036275",
+        "name": "D'Andre Swift",
+        "position": "RB",
+        "team": "CHI",
+        "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/owpmwzoilitcodc6cmxo",
+        "opponent": "CAR"
+      }
+    },
+    {
+      "slot": "BN1",
+      "player": {
+        "player_id": "00-0037838",
+        "name": "Isaiah Likely",
+        "position": "TE",
+        "team": "NYG",
+        "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/b1pahldt9ixp9lssxi2d",
+        "opponent": "DAL"
+      }
+    },
+    {
+      "slot": "BN2",
+      "player": {
+        "player_id": "00-0036971",
+        "name": "Trevor Lawrence",
+        "position": "QB",
+        "team": "JAX",
+        "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/k9uzdernqkx7oquy7dkg",
+        "opponent": "CLE"
+      }
+    },
+    {
+      "slot": "BN3",
+      "player": {
+        "player_id": "00-0040735",
+        "name": "Luther Burden III",
+        "position": "WR",
+        "team": "CHI",
+        "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/iyuwdz7pbowdkwzq2tg5",
+        "opponent": "CAR"
+      }
+    },
+    {
+      "slot": "BN4",
+      "player": {
+        "player_id": "00-0041035",
+        "name": "De'Zhaun Stribling",
+        "position": "WR",
+        "team": "SF",
+        "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/eu1nxtlztiwr5ko48iwz",
+        "opponent": "LAR"
+      }
+    },
+    {
+      "slot": "BN5",
+      "player": {
+        "player_id": "00-0040878",
+        "name": "Mike Washington Jr.",
+        "position": "RB",
+        "team": "LV",
+        "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/ocdjq5ohmtgdghqdh5m4",
+        "opponent": "MIA"
+      }
+    },
+    {
+      "slot": "BN6",
+      "player": {
+        "player_id": "00-0040583",
+        "name": "Woody Marks",
+        "position": "RB",
+        "team": "HOU",
+        "headshot": "https://static.www.nfl.com/image/upload/f_auto,q_auto/league/y5ntpcenhhhv98uz2fys",
+        "opponent": "BUF"
+      }
+    }
+  ]
+}

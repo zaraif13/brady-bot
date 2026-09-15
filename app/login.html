@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brady Bot — Login</title>
+  <link rel="stylesheet" href="atlas.css" />
+  <link rel="stylesheet" href="custom.css" />
+</head>
+<body>
+  <button type="button" class="btn-settings login-settings" id="btn-settings" aria-label="Settings">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z" />
+      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.604.852.997 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z" />
+    </svg>
+  </button>
+
+  <div class="login-page">
+    <img class="login-logo" src="assets/brady-bot-logo-text-white.png?v=20260915" alt="Brady Bot" />
+    <form class="login-panel" id="login-form" autocomplete="on">
+      <label class="login-label" for="login-username">Username</label>
+      <input
+        class="login-input"
+        type="email"
+        id="login-username"
+        name="username"
+        autocomplete="username"
+        required
+        placeholder="email@example.com"
+      />
+      <label class="login-label" for="login-password">Password</label>
+      <input
+        class="login-input"
+        type="password"
+        id="login-password"
+        name="password"
+        autocomplete="current-password"
+        required
+      />
+      <p id="login-error" class="form-error" hidden></p>
+      <button type="submit" class="atlas-btn atlas-btn-primary atlas-btn-lg login-submit" id="login-submit">
+        Login
+      </button>
+    </form>
+  </div>
+
+  <div class="modal-backdrop" id="admin-modal" hidden>
+    <div class="modal-panel" id="admin-modal-panel" role="dialog" aria-modal="true" aria-labelledby="admin-modal-title">
+      <div class="modal-header">
+        <h2 class="modal-title" id="admin-modal-title">Admin</h2>
+        <button type="button" class="modal-close" id="admin-modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div id="admin-modal-body"></div>
+    </div>
+  </div>
+
+  <script type="module" src="js/login.js"></script>
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>

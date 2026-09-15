@@ -1,0 +1,114 @@
+# Authoritative QB calibre ranking, 2026 season. Rank 1 = best.
+#
+# Consumed by WR Step 5, TE Step 5, FLEX Step 4 (§7.3) and DEF Step 2 (§8.6,
+# inverted). All four read this one rank so they never disagree about how good a
+# given quarterback is. NEVER consumed by the QB picker's own scoring — the QB
+# equation has no self-calibre factor.
+#
+# Unlisted QBs fall back to derived per-game fantasy points (tech spec §5.6),
+# flagged qb_calibre_derived_fallback. Eight deep-bench QBs on the playing-style
+# table are deliberately absent here; so is any mid-season arrival.
+#
+# GENERATED from docs/lineup/lineup-picker-qb-calibre.md by
+# scripts/gen_qb_calibre_ranks.py — edit the spec doc, then re-run. Names resolve
+# to gsis_id at startup filtered by team AND position; ambiguity halts.
+qb_calibre_ranks:
+  - {rank: 1,  name: "Josh Allen",            team: "BUF"}
+  - {rank: 2,  name: "Drake Maye",            team: "NE"}
+  - {rank: 3,  name: "Joe Burrow",            team: "CIN"}
+  - {rank: 4,  name: "Lamar Jackson",         team: "BAL"}
+  - {rank: 5,  name: "Dak Prescott",          team: "DAL"}
+  - {rank: 6,  name: "Brock Purdy",           team: "SF"}
+  - {rank: 7,  name: "Jalen Hurts",           team: "PHI"}
+  - {rank: 8,  name: "Matthew Stafford",      team: "LAR"}
+  - {rank: 9,  name: "Jayden Daniels",        team: "WAS"}
+  - {rank: 10, name: "Caleb Williams",        team: "CHI"}
+  - {rank: 11, name: "Trevor Lawrence",       team: "JAX"}
+  - {rank: 12, name: "Jared Goff",            team: "DET"}
+  - {rank: 13, name: "Patrick Mahomes",       team: "KC"}
+  - {rank: 14, name: "Justin Herbert",        team: "LAC"}
+  - {rank: 15, name: "Bo Nix",                team: "DEN"}
+  - {rank: 16, name: "Jaxson Dart",           team: "NYG"}
+  - {rank: 17, name: "Kyler Murray",          team: "MIN"}
+  - {rank: 18, name: "Baker Mayfield",        team: "TB"}
+  - {rank: 19, name: "Jordan Love",           team: "GB"}
+  - {rank: 20, name: "Tyler Shough",          team: "NO"}
+  - {rank: 21, name: "Sam Darnold",           team: "SEA"}
+  - {rank: 22, name: "C.J. Stroud",           team: "HOU"}
+  - {rank: 23, name: "Daniel Jones",          team: "IND"}
+  - {rank: 24, name: "Malik Willis",          team: "MIA"}
+  - {rank: 25, name: "Bryce Young",           team: "CAR"}
+  - {rank: 26, name: "Jacoby Brissett",       team: "ARI"}
+  - {rank: 27, name: "Cam Ward",              team: "TEN"}
+  - {rank: 28, name: "Geno Smith",            team: "NYJ"}
+  - {rank: 29, name: "Aaron Rodgers",         team: "PIT"}
+  - {rank: 30, name: "Fernando Mendoza",      team: "LV"}
+  - {rank: 31, name: "Tua Tagovailoa",        team: "ATL"}
+  - {rank: 32, name: "Deshaun Watson",        team: "CLE"}
+  - {rank: 33, name: "Shedeur Sanders",       team: "CLE"}
+  - {rank: 34, name: "Michael Penix Jr.",     team: "ATL"}
+  - {rank: 35, name: "Kirk Cousins",          team: "LV"}
+  - {rank: 36, name: "Carson Beck",           team: "ARI"}
+  - {rank: 37, name: "Spencer Rattler",       team: "NO"}
+  - {rank: 38, name: "J.J. McCarthy",         team: "MIN"}
+  - {rank: 39, name: "Mason Rudolph",         team: "PIT"}
+  - {rank: 40, name: "Marcus Mariota",        team: "WAS"}
+  - {rank: 41, name: "Jameis Winston",        team: "NYG"}
+  - {rank: 42, name: "Mac Jones",             team: "SF"}
+  - {rank: 43, name: "Davis Mills",           team: "HOU"}
+  - {rank: 44, name: "Riley Leonard",         team: "IND"}
+  - {rank: 45, name: "Joe Flacco",            team: "CIN"}
+  - {rank: 46, name: "Justin Fields",         team: "KC"}
+  - {rank: 47, name: "Tyrod Taylor",          team: "GB"}
+  - {rank: 48, name: "Gardner Minshew II",    team: "ARI"}
+  - {rank: 49, name: "Cade Klubnik",          team: "NYJ"}
+  - {rank: 50, name: "Kenny Pickett",         team: "CAR"}
+  - {rank: 51, name: "Ty Simpson",            team: "LAR"}
+  - {rank: 52, name: "Andy Dalton",           team: "PHI"}
+  - {rank: 53, name: "Quinn Ewers",           team: "JAX"}
+  - {rank: 54, name: "Tyler Huntley",         team: "BAL"}
+  - {rank: 55, name: "Carson Wentz",          team: "MIN"}
+  - {rank: 56, name: "Trey Lance",            team: "LAC"}
+  - {rank: 57, name: "Tyson Bagent",          team: "CHI"}
+  - {rank: 58, name: "Drew Allar",            team: "PIT"}
+  - {rank: 59, name: "Anthony Richardson Sr.",team: "IND"}
+  - {rank: 60, name: "Will Howard",           team: "PIT"}
+  - {rank: 61, name: "Tommy DeVito",          team: "NE"}
+  - {rank: 62, name: "Joshua Dobbs",          team: "DET"}
+  - {rank: 63, name: "Mitchell Trubisky",     team: "TEN"}
+  - {rank: 64, name: "Jarrett Stidham",       team: "DEN"}
+  - {rank: 65, name: "Sam Howell",            team: "DAL"}
+  - {rank: 66, name: "Drew Lock",             team: "SEA"}
+  - {rank: 67, name: "Kyle Allen",            team: "BUF"}
+  - {rank: 68, name: "Tanner McKee",          team: "PHI"}
+  - {rank: 69, name: "Jalon Daniels",         team: "TB"}
+  - {rank: 70, name: "Cole Payton",           team: "PHI"}
+  - {rank: 71, name: "Jalen Milroe",          team: "SEA"}
+  - {rank: 72, name: "Stetson Bennett IV",    team: "LAR"}
+  - {rank: 73, name: "Kyle McCord",           team: "MIA"}
+  - {rank: 74, name: "Brady Cook",            team: "MIA"}
+  - {rank: 75, name: "Taylen Green",          team: "CLE"}
+  - {rank: 76, name: "Cooper Rush",           team: "ATL"}
+  - {rank: 77, name: "Zach Wilson",           team: "NO"}
+  - {rank: 78, name: "Joe Milton III",        team: "DAL"}
+  - {rank: 79, name: "Skylar Thompson",       team: "BAL"}
+  - {rank: 80, name: "Hendon Hooker",         team: "TEN"}
+  - {rank: 81, name: "Nick Mullens",          team: "JAX"}
+  - {rank: 82, name: "Luke Altmyer",          team: "DET"}
+  - {rank: 83, name: "Easton Stick",          team: "TB"}
+  - {rank: 84, name: "Garrett Nussmeier",     team: "KC"}
+  - {rank: 85, name: "Behren Morton",         team: "NE"}
+  - {rank: 86, name: "Shane Buechele",        team: "BUF"}
+  - {rank: 87, name: "Sam Ehlinger",          team: "DEN"}
+  - {rank: 88, name: "Sean Clifford",         team: "CIN"}
+  - {rank: 89, name: "Graham Mertz",          team: "HOU"}
+  - {rank: 90, name: "Josh Johnson",          team: "CIN"}
+  - {rank: 91, name: "Case Keenum",           team: "CHI"}
+  - {rank: 92, name: "Kurtis Rourke",         team: "SF"}
+  - {rank: 93, name: "Athan Kaliakmanis",     team: "WAS"}
+  - {rank: 94, name: "Aidan O'Connell",       team: "LV"}
+  - {rank: 95, name: "Bailey Zappe",          team: "NYJ"}
+  - {rank: 96, name: "Max Brosmer",           team: "MIN"}
+  - {rank: 97, name: "Dillon Gabriel",        team: "CLE"}
+  - {rank: 98, name: "Sam Hartman",           team: "WAS"}
+  - {rank: 99, name: "Jake Haener",           team: "NYG"}

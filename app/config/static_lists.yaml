@@ -1,0 +1,153 @@
+rb_tier1:
+  - {name: "Jahmyr Gibbs", team: DET}
+  - {name: "Bijan Robinson", team: ATL}
+  - {name: "Jonathan Taylor", team: IND}
+  - {name: "James Cook III", team: BUF}
+  - {name: "Christian McCaffrey", team: SF}
+  - {name: "Saquon Barkley", team: PHI}
+
+rb_tier2:
+  - {name: "Derrick Henry", team: BAL}
+  - {name: "Chase Brown", team: CIN}
+  - {name: "Kenneth Walker III", team: KC}
+  - {name: "Omarion Hampton", team: LAC}
+
+wr_top5:
+  - {name: "Ja'Marr Chase", team: CIN}
+  - {name: "Puka Nacua", team: LAR}
+  - {name: "Jaxon Smith-Njigba", team: SEA}
+  - {name: "Amon-Ra St. Brown", team: DET}
+  - {name: "CeeDee Lamb", team: DAL}
+
+elite_wrs:
+  - {name: "Ja'Marr Chase", team: CIN}
+  - {name: "Puka Nacua", team: LAR}
+  - {name: "Jaxon Smith-Njigba", team: SEA}
+  - {name: "Amon-Ra St. Brown", team: DET}
+  - {name: "CeeDee Lamb", team: DAL}
+  - {name: "Justin Jefferson", team: MIN}
+  - {name: "A.J. Brown", team: NE}
+  - {name: "Drake London", team: ATL}
+  - {name: "George Pickens", team: DAL}
+  - {name: "Chris Olave", team: NO}
+
+te_top4:
+  - {name: "Brock Bowers", team: LV}
+  - {name: "Trey McBride", team: ARI}
+  - {name: "Tyler Warren", team: IND}
+  - {name: "Colston Loveland", team: CHI}
+
+elite_tes:
+  - {name: "Brock Bowers", team: LV}
+  - {name: "Trey McBride", team: ARI}
+  - {name: "Tyler Warren", team: IND}
+  - {name: "Colston Loveland", team: CHI}
+
+qb_styles:
+  - {name: "Josh Allen", team: BUF, mobile: true}
+  - {name: "Kyle Allen", team: BUF, mobile: false}
+  - {name: "Shane Buechele", team: BUF, mobile: false}
+  - {name: "Malik Willis", team: MIA, mobile: true}
+  - {name: "Kyle McCord", team: MIA, mobile: false}
+  - {name: "Brady Cook", team: MIA, mobile: false}
+  - {name: "Drake Maye", team: NE, mobile: true}
+  - {name: "Behren Morton", team: NE, mobile: false}
+  - {name: "Tommy DeVito", team: NE, mobile: false}
+  - {name: "Geno Smith", team: NYJ, mobile: false}
+  - {name: "Cade Klubnik", team: NYJ, mobile: true}
+  - {name: "Bailey Zappe", team: NYJ, mobile: false}
+  - {name: "Lamar Jackson", team: BAL, mobile: true}
+  - {name: "Tyler Huntley", team: BAL, mobile: true}
+  - {name: "Joe Fagnano", team: BAL, mobile: false}
+  - {name: "Skylar Thompson", team: BAL, mobile: false}
+  - {name: "Joe Burrow", team: CIN, mobile: false}
+  - {name: "Joe Flacco", team: CIN, mobile: false}
+  - {name: "Josh Johnson", team: CIN, mobile: true}
+  - {name: "Sean Clifford", team: CIN, mobile: false}
+  - {name: "Deshaun Watson", team: CLE, mobile: true}
+  - {name: "Shedeur Sanders", team: CLE, mobile: false}
+  - {name: "Taylen Green", team: CLE, mobile: true}
+  - {name: "Dillon Gabriel", team: CLE, mobile: true}
+  - {name: "Aaron Rodgers", team: PIT, mobile: false}
+  - {name: "Mason Rudolph", team: PIT, mobile: false}
+  - {name: "Drew Allar", team: PIT, mobile: false}
+  - {name: "Will Howard", team: PIT, mobile: true}
+  - {name: "C.J. Stroud", team: HOU, mobile: false}
+  - {name: "Davis Mills", team: HOU, mobile: false}
+  - {name: "Mark Gronowski", team: HOU, mobile: false}
+  - {name: "Graham Mertz", team: HOU, mobile: false}
+  - {name: "Daniel Jones", team: IND, mobile: false}
+  - {name: "Anthony Richardson", team: IND, mobile: true}
+  - {name: "Riley Leonard", team: IND, mobile: true}
+  - {name: "Trevor Lawrence", team: JAX, mobile: true}
+  - {name: "Quinn Ewers", team: JAX, mobile: false}
+  - {name: "Nick Mullens", team: JAX, mobile: false}
+  - {name: "Joey Aguilar", team: JAX, mobile: false}
+  - {name: "Cam Ward", team: TEN, mobile: false}
+  - {name: "Mitchell Trubisky", team: TEN, mobile: true}
+  - {name: "Hendon Hooker", team: TEN, mobile: true}
+  - {name: "Bo Nix", team: DEN, mobile: true}
+  - {name: "Jarrett Stidham", team: DEN, mobile: false}
+  - {name: "Sam Ehlinger", team: DEN, mobile: true}
+  - {name: "Patrick Mahomes", team: KC, mobile: false}
+  - {name: "Justin Fields", team: KC, mobile: true}
+  - {name: "Garrett Nussmeier", team: KC, mobile: false}
+  - {name: "Fernando Mendoza", team: LV, mobile: false}
+  - {name: "Kirk Cousins", team: LV, mobile: false}
+  - {name: "Aidan O'Connell", team: LV, mobile: false}
+  - {name: "Justin Herbert", team: LAC, mobile: true}
+  - {name: "Trey Lance", team: LAC, mobile: true}
+  - {name: "DJ Uiagalelei", team: LAC, mobile: false}
+  - {name: "Dak Prescott", team: DAL, mobile: true}
+  - {name: "Sam Howell", team: DAL, mobile: true}
+  - {name: "Joe Milton III", team: DAL, mobile: true}
+  - {name: "Jaxson Dart", team: NYG, mobile: true}
+  - {name: "Jameis Winston", team: NYG, mobile: false}
+  - {name: "Jake Haener", team: NYG, mobile: false}
+  - {name: "Jalen Hurts", team: PHI, mobile: true}
+  - {name: "Andy Dalton", team: PHI, mobile: false}
+  - {name: "Tanner McKee", team: PHI, mobile: false}
+  - {name: "Cole Payton", team: PHI, mobile: true}
+  - {name: "Jayden Daniels", team: WAS, mobile: true}
+  - {name: "Marcus Mariota", team: WAS, mobile: true}
+  - {name: "Athan Kaliakmanis", team: WAS, mobile: false}
+  - {name: "Sam Hartman", team: WAS, mobile: false}
+  - {name: "Caleb Williams", team: CHI, mobile: true}
+  - {name: "Tyson Bagent", team: CHI, mobile: true}
+  - {name: "Case Keenum", team: CHI, mobile: false}
+  - {name: "Jared Goff", team: DET, mobile: false}
+  - {name: "Joshua Dobbs", team: DET, mobile: true}
+  - {name: "Luke Altmyer", team: DET, mobile: false}
+  - {name: "Jordan Love", team: GB, mobile: false}
+  - {name: "Tyrod Taylor", team: GB, mobile: true}
+  - {name: "Kedon Slovis", team: GB, mobile: false}
+  - {name: "Kyler Murray", team: MIN, mobile: true}
+  - {name: "J.J. McCarthy", team: MIN, mobile: false}
+  - {name: "Carson Wentz", team: MIN, mobile: false}
+  - {name: "Max Brosmer", team: MIN, mobile: false}
+  - {name: "Michael Penix Jr.", team: ATL, mobile: false}
+  - {name: "Tua Tagovailoa", team: ATL, mobile: false}
+  - {name: "Jack Strand", team: ATL, mobile: false}
+  - {name: "Cooper Rush", team: ATL, mobile: false}
+  - {name: "Bryce Young", team: CAR, mobile: true}
+  - {name: "Kenny Pickett", team: CAR, mobile: false}
+  - {name: "Haynes King", team: CAR, mobile: true}
+  - {name: "Tyler Shough", team: NO, mobile: true}
+  - {name: "Zach Wilson", team: NO, mobile: true}
+  - {name: "Spencer Rattler", team: NO, mobile: true}
+  - {name: "Baker Mayfield", team: TB, mobile: false}
+  - {name: "Jalon Daniels", team: TB, mobile: true}
+  - {name: "Easton Stick", team: TB, mobile: true}
+  - {name: "Jacoby Brissett", team: ARI, mobile: false}
+  - {name: "Gardner Minshew II", team: ARI, mobile: false}
+  - {name: "Carson Beck", team: ARI, mobile: false}
+  - {name: "Matthew Stafford", team: LAR, mobile: false}
+  - {name: "Ty Simpson", team: LAR, mobile: false}
+  - {name: "Stetson Bennett IV", team: LAR, mobile: false}
+  - {name: "Matthew Caldwell", team: LAR, mobile: false}
+  - {name: "Brock Purdy", team: SF, mobile: false}
+  - {name: "Mac Jones", team: SF, mobile: false}
+  - {name: "Kurtis Rourke", team: SF, mobile: false}
+  - {name: "Sam Darnold", team: SEA, mobile: false}
+  - {name: "Drew Lock", team: SEA, mobile: false}
+  - {name: "Jalen Milroe", team: SEA, mobile: true}

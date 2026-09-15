@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brady Bot — Opportunity Share</title>
+  <link rel="stylesheet" href="atlas.css" />
+  <link rel="stylesheet" href="custom.css" />
+</head>
+<body>
+  <div class="app-wrap">
+    <header class="app-header">
+      <img class="brand-logo" src="assets/brady-bot-logo-text-white.png?v=20260915" alt="Brady Bot" />
+      <nav class="app-nav atlas-tabbar" aria-label="Brady Bot" data-nav-root data-nav-active="opportunity"></nav>
+      <div class="header-actions">
+        <div class="header-spacer" aria-hidden="true"></div>
+      </div>
+    </header>
+
+    <main class="opp-main" aria-label="Opportunity Share">
+      <section class="panel opp-panel">
+        <div class="opp-toolbar">
+          <label class="opp-filter-label" for="opp-team">
+            <span class="opp-label-text">Team</span>
+            <select id="opp-team" class="atlas-input opp-select" aria-label="Select NFL team"></select>
+          </label>
+
+          <label class="opp-filter-label" for="opp-view">
+            <span class="opp-label-text">View</span>
+            <select id="opp-view" class="atlas-input opp-select" aria-label="Select week or All"></select>
+          </label>
+        </div>
+
+        <div id="opp-all-banner" class="opp-all-banner" hidden>
+          Averages exclude missed weeks (bye, injury, inactive) — they are not counted as 0%.
+          The <span class="opp-gp-inline">GP n</span> badge is the qualifying-game count behind each average.
+        </div>
+
+        <p id="opp-status" class="opp-status" hidden></p>
+
+        <div id="opp-table-root" class="opp-table-root"></div>
+
+        <footer class="opp-footnote">
+          <p>
+            Target Share and Rush Share come from weekly player stats; red-zone shares and play mix
+            are derived from play-by-play inside the 20. Qty is the raw count behind each percentage
+            (summed in All). Bellcow (🔔) marks an RB with rush share ≥ 60% in the active view.
+          </p>
+        </footer>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="js/opportunity/opportunity-share.js"></script>
+</body>
+</html>

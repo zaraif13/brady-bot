@@ -1,0 +1,22 @@
+# S11 — manual `pos_rank` overrides for stale or wrong published depth charts.
+# Checked BEFORE the published depth chart and always wins (§5.9a, §10.3b).
+#
+# This file was previously the committee-change override. That rule is RETIRED
+# (D16, superseded by D19): `pos_rank` reads the player's current team's current
+# depth chart, so it already reflects a new situation and needs no neutralizing.
+# See lineup-picker-DEPTH-CHART.md and lineup-picker-COMMITTEE.md.
+#
+# What it covers now is the one residual risk `pos_rank` carries: depth charts can
+# lag in the preseason. A late free-agent signing or a post-cuts chart may not yet
+# reflect reality when Week 1 scores are computed. From Week 5 the risk disappears,
+# because pos_rank no longer contributes to any score.
+#
+# position must be RB, WR or TE — the only positions that score pos_rank.
+# pos_rank 1 = starter, 2 = backup, 3 = third string.
+#
+# Names resolve to gsis_id at startup via load_players(). Unresolved or ambiguous
+# entries halt the run, same as every other static list.
+
+depth_overrides: []
+  # - {name: "Example Player", team: KC, position: RB, pos_rank: 1,
+  #    note: "Signed post-cuts; depth chart not yet updated"}

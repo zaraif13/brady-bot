@@ -1,0 +1,41 @@
+league:
+  name: "Dhaka Chamber of Football"
+  season: 2026
+  scoring_format: "half_ppr"
+
+roster:
+  starters:
+    QB: 1
+    RB: 2
+    WR: 2
+    TE: 1
+    FLEX: 1
+    K: 1
+    DEF: 1
+  bench: 6
+  ir: 1
+
+flex_eligible: [RB, WR, TE]
+
+scoring:
+  passing_yards_per_point: 30
+  passing_td: 5
+  interception: -2
+  pick_six: -2
+  rushing_yards_per_point: 10
+  rushing_td: 6
+  receiving_yards_per_point: 10
+  receiving_td: 6
+  reception: 0.5
+  fumble_lost: -2
+  two_point_conversion: 2
+  # Kicker — Dhaka Chamber distance-premium (league-rules.md Kickers)
+  fg_0_19: 1
+  fg_20_29: 2
+  fg_30_39: 3
+  fg_40_49: 4
+  fg_50_plus: 5
+  fg_missed_0_19: -2
+  fg_missed_20_29: -1
+  pat_made: 1
+  pat_missed: -1

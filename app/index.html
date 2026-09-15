@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brady Bot — Lineup Picker</title>
+  <link rel="stylesheet" href="atlas.css" />
+  <link rel="stylesheet" href="custom.css" />
+</head>
+<body>
+  <div class="app-wrap">
+    <header class="app-header">
+      <img class="brand-logo" src="assets/brady-bot-logo-text-white.png?v=20260915" alt="Brady Bot" />
+      <nav class="app-nav atlas-tabbar" aria-label="Brady Bot" data-nav-root data-nav-active="lineup"></nav>
+      <div class="header-actions">
+        <button type="button" class="btn-settings" id="btn-settings" aria-label="Settings">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z" />
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9c.26.604.852.997 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1Z" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <div class="modal-backdrop" id="admin-modal" hidden>
+      <div class="modal-panel" id="admin-modal-panel" role="dialog" aria-modal="true" aria-labelledby="admin-modal-title">
+        <div class="modal-header">
+          <h2 class="modal-title" id="admin-modal-title">Admin</h2>
+          <button type="button" class="modal-close" id="admin-modal-close" aria-label="Close">&times;</button>
+        </div>
+        <div id="admin-modal-body"></div>
+      </div>
+    </div>
+
+    <main class="panels">
+      <section class="panel panel-left" aria-label="Roster entry">
+        <div class="panel-heading">
+          <h2 class="atlas-panel-title">Your Roster</h2>
+          <div class="slot-actions">
+            <button type="button" class="atlas-btn atlas-btn-secondary atlas-btn-sm" id="btn-add-bn">+ BN</button>
+            <button type="button" class="atlas-btn atlas-btn-secondary atlas-btn-sm" id="btn-add-ir">+ IR</button>
+            <button type="button" class="atlas-btn atlas-btn-secondary atlas-btn-sm" id="btn-reset-roster">Reset</button>
+          </div>
+        </div>
+        <div id="roster-slots" class="roster-slots"></div>
+        <div class="pick-actions">
+          <p id="roster-error" class="form-error" hidden></p>
+          <button type="button" class="atlas-btn atlas-btn-primary atlas-btn-lg" id="btn-pick">Pick Lineup</button>
+        </div>
+      </section>
+
+      <section class="panel panel-right" aria-label="Optimal lineup">
+        <h2 class="lineup-title" id="lineup-title">Gameweek — Lineup</h2>
+        <div id="lineup-result" class="lineup-result">
+          <p class="empty-hint">Fill your roster on the left, then click Pick Lineup.</p>
+        </div>
+        <div id="lineup-warnings" class="lineup-warnings" hidden></div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="js/lineup/app.js"></script>
+  <script type="module" src="js/admin.js"></script>
+</body>
+</html>

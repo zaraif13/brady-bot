@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" style="color-scheme: dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brady Bot — True Depth Chart</title>
+  <link rel="stylesheet" href="atlas.css" />
+  <link rel="stylesheet" href="custom.css" />
+</head>
+<body>
+  <div class="app-wrap">
+    <header class="app-header">
+      <img class="brand-logo" src="assets/brady-bot-logo-text-white.png?v=20260915" alt="Brady Bot" />
+      <nav class="app-nav atlas-tabbar" aria-label="Brady Bot" data-nav-root data-nav-active="depth-chart"></nav>
+      <div class="header-actions">
+        <div class="header-spacer" aria-hidden="true"></div>
+      </div>
+    </header>
+
+    <main class="tdc-main" aria-label="True Depth Chart">
+      <section class="panel tdc-panel">
+        <div class="tdc-toolbar">
+          <label class="tdc-team-label" for="tdc-team">
+            <span class="tdc-label-text">Team</span>
+            <select id="tdc-team" class="atlas-input tdc-team-select" aria-label="Select NFL team"></select>
+          </label>
+
+          <div class="tdc-mode" role="group" aria-label="Chart mode">
+            <span class="tdc-mode-label" id="tdc-mode-left">Depth Chart</span>
+            <button
+              type="button"
+              class="atlas-switch tdc-switch"
+              id="tdc-switch"
+              role="switch"
+              aria-checked="false"
+              aria-label="Toggle True Depth Chart"
+            ></button>
+            <span class="tdc-mode-label" id="tdc-mode-right">True Depth Chart</span>
+          </div>
+
+          <div class="tdc-legend" id="tdc-legend" hidden>
+            <span class="tdc-legend-item tdc-legend-up"><span class="tdc-legend-swatch"></span>▲ Moved up</span>
+            <span class="tdc-legend-item tdc-legend-down"><span class="tdc-legend-swatch"></span>▼ Moved down</span>
+          </div>
+        </div>
+
+        <p id="tdc-status" class="tdc-status" hidden></p>
+
+        <div class="tdc-body">
+          <div class="tdc-chart-pane">
+            <div id="tdc-chart" class="tdc-chart"></div>
+          </div>
+          <div class="tdc-divider" aria-hidden="true"></div>
+          <aside class="tdc-injuries-pane" aria-label="Other Starter Injuries">
+            <h2 class="tdc-injuries-title">Other Starter Injuries</h2>
+            <ul id="tdc-injuries" class="tdc-injuries-list">
+              <li><span class="tdc-injuries-label">OL</span><span class="tdc-injuries-count" data-unit="OL">—</span></li>
+              <li><span class="tdc-injuries-label">DL</span><span class="tdc-injuries-count" data-unit="DL">—</span></li>
+              <li><span class="tdc-injuries-label">LBs</span><span class="tdc-injuries-count" data-unit="LBs">—</span></li>
+              <li><span class="tdc-injuries-label">DBs</span><span class="tdc-injuries-count" data-unit="DBs">—</span></li>
+            </ul>
+          </aside>
+        </div>
+
+        <footer class="tdc-footnote">
+          <p>
+            True Depth Chart reorders RB / WR / TE from season-to-date Target Share (WR/TE) and Rush Share (RB);
+            QB always mirrors the published chart. Other Starter Injuries counts only Out and Doubtful starters
+            on OL, DL, LBs, and DBs for the current gameweek.
+          </p>
+        </footer>
+      </section>
+    </main>
+  </div>
+
+  <script type="module" src="js/depth-chart/true-depth.js"></script>
+</body>
+</html>

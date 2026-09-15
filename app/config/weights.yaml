@@ -1,0 +1,72 @@
+global:
+  matchup_normalization: percentile
+  qb_dual_threat_rush_att_threshold: 4.0
+  calibre_min_games: 3
+
+qb:
+  style: 0.15
+  pass_catcher: 0.20
+  oline: 0.10
+  matchup: 0.30
+  secondary_injury: 0.15
+  baseline: 0.10
+
+rb:
+  depth_chart: 0.30
+  ranking: 0.15
+  oline: 0.15
+  teammate_injury: 0.10
+  matchup: 0.20
+  front_seven_injury: 0.05
+  baseline: 0.05
+  tier2_bonus: 0.30
+
+wr:
+  depth_chart: 0.20
+  qb_quality: 0.15
+  ranking: 0.15
+  teammate_injury: 0.15
+  matchup: 0.20
+  secondary_injury: 0.10
+  baseline: 0.05
+
+te:
+  ranking: 0.15
+  qb_quality: 0.15
+  wr_injury: 0.25
+  matchup: 0.25
+  secondary_injury: 0.15
+  baseline: 0.05
+
+flex:
+  opportunity: 0.40
+  matchup: 0.25
+  situation: 0.15
+  player_calibre: 0.10
+  baseline: 0.10
+
+k:
+  team_offense: 0.30
+  red_zone: 0.25
+  opp_defense: 0.15
+  game_environment: 0.15
+  kicker_calibre: 0.15
+
+def:
+  opp_qb: 0.30
+  opp_skill: 0.15
+  opp_oline: 0.15
+  defensive_injury: 0.15
+  baseline: 0.15
+  defense_calibre: 0.10
+
+calibre_denominators:
+  WR: 59
+  RB: 39
+  TE: 29
+  DEF: 31
+
+flex_pool_sizes:
+  WR: 60
+  RB: 40
+  TE: 30

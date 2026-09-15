@@ -1,0 +1,14 @@
+[Unit]
+Description=Brady Bot
+After=network.target
+
+[Service]
+User=www-data
+WorkingDirectory=/var/www/brady-bot/app
+Environment="PATH=/var/www/brady-bot/app/.venv/bin"
+EnvironmentFile=-/var/www/brady-bot/app/.env
+ExecStart=/var/www/brady-bot/app/.venv/bin/uvicorn brady_bot.api:app --host 127.0.0.1 --port 8000
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

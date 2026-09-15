@@ -1,0 +1,81 @@
+========================================================================
+Brady Bot — Step 0 Schema Probe
+========================================================================
+Generated: 2026-09-13T06:59:33Z
+Season probed: 2025 (and players catalog)
+Source: nflreadpy live loads
+
+========================================================================
+player_stats (S2) — 19422 rows × 150 cols
+========================================================================
+player_id, player_name, player_display_name, position, position_group, headshot_url, season, week, season_type, game_id, team, opponent_team, completions, attempts, passing_yards, passing_tds, passing_interceptions, sacks_suffered, sack_yards_lost, sack_fumbles, sack_fumbles_lost, passing_air_yards, passing_yards_after_catch, passing_first_downs, passing_epa, passing_cpoe, passing_2pt_conversions, pacr, passing_10, passing_16, passing_20, passing_40, carries, rushing_yards, rushing_tds, rushing_fumbles, rushing_fumbles_lost, rushing_first_downs, rushing_epa, rushing_2pt_conversions, rushing_10, rushing_12, rushing_20, rushing_40, receptions, targets, receiving_yards, receiving_tds, receiving_fumbles, receiving_fumbles_lost, receiving_air_yards, receiving_yards_after_catch, receiving_first_downs, receiving_epa, receiving_2pt_conversions, receiving_10, receiving_16, receiving_20, receiving_40, racr, target_share, air_yards_share, wopr, special_teams_tds, def_tackles_solo, def_tackles_with_assist, def_tackle_assists, def_tackles_for_loss, def_tackles_for_loss_yards, def_fumbles_forced, def_sacks, def_sack_yards, def_qb_hits, def_interceptions, def_interception_yards, def_pass_defended, def_tds, def_fumbles, def_safeties, def_punt_blocks, def_pat_blocks, def_fg_blocks, def_2pt_atts, def_2pt_made, misc_yards, fumble_recovery_own, fumble_recovery_yards_own, fumble_recovery_opp, fumble_recovery_yards_opp, fumble_recovery_tds, penalties, penalty_yards, fumbles_forced_by_opp, fumbles_not_forced, fumbles_out_of_bounds, fumbles_total, fumbles_lost_total, punt_returns, punt_return_yards, kickoff_returns, kickoff_return_yards, fg_made, fg_att, fg_missed, fg_blocked, fg_long, fg_pct, fg_made_0_19, fg_made_20_29, fg_made_30_39, fg_made_40_49, fg_made_50_59, fg_made_60_, fg_missed_0_19, fg_missed_20_29, fg_missed_30_39, fg_missed_40_49, fg_missed_50_59, fg_missed_60_, fg_made_list, fg_missed_list, fg_blocked_list, fg_made_distance, fg_missed_distance, fg_blocked_distance, pat_made, pat_att, pat_missed, pat_blocked, pat_pct, gwfg_made, gwfg_att, gwfg_missed, gwfg_blocked, gwfg_distance, pt_att, pt_blocked, pt_long, pt_yards, pt_inside_20, pt_out_of_bounds, pt_downed, pt_touchback, pt_fair_caught, pt_returned, pt_return_yards, pt_return_tds, pt_net_yards, fantasy_points, fantasy_points_ppr
+
+========================================================================
+team_stats (S3) — 570 rows × 138 cols
+========================================================================
+season, week, team, season_type, game_id, opponent_team, completions, attempts, passing_yards, passing_tds, passing_interceptions, sacks_suffered, sack_yards_lost, sack_fumbles, sack_fumbles_lost, passing_air_yards, passing_yards_after_catch, passing_first_downs, passing_epa, passing_cpoe, passing_2pt_conversions, passing_10, passing_16, passing_20, passing_40, carries, rushing_yards, rushing_tds, rushing_fumbles, rushing_fumbles_lost, rushing_first_downs, rushing_epa, rushing_2pt_conversions, rushing_10, rushing_12, rushing_20, rushing_40, receptions, targets, receiving_yards, receiving_tds, receiving_fumbles, receiving_fumbles_lost, receiving_air_yards, receiving_yards_after_catch, receiving_first_downs, receiving_epa, receiving_2pt_conversions, receiving_10, receiving_16, receiving_20, receiving_40, special_teams_tds, def_tackles_solo, def_tackles_with_assist, def_tackle_assists, def_tackles_for_loss, def_tackles_for_loss_yards, def_fumbles_forced, def_sacks, def_sack_yards, def_qb_hits, def_interceptions, def_interception_yards, def_pass_defended, def_tds, def_fumbles, def_safeties, def_punt_blocks, def_pat_blocks, def_fg_blocks, def_2pt_atts, def_2pt_made, misc_yards, fumble_recovery_own, fumble_recovery_yards_own, fumble_recovery_opp, fumble_recovery_yards_opp, fumble_recovery_tds, penalties, penalty_yards, timeouts, fumbles_forced_by_opp, fumbles_not_forced, fumbles_out_of_bounds, fumbles_total, fumbles_lost_total, punt_returns, punt_return_yards, kickoff_returns, kickoff_return_yards, fg_made, fg_att, fg_missed, fg_blocked, fg_long, fg_pct, fg_made_0_19, fg_made_20_29, fg_made_30_39, fg_made_40_49, fg_made_50_59, fg_made_60_, fg_missed_0_19, fg_missed_20_29, fg_missed_30_39, fg_missed_40_49, fg_missed_50_59, fg_missed_60_, fg_made_list, fg_missed_list, fg_blocked_list, fg_made_distance, fg_missed_distance, fg_blocked_distance, pat_made, pat_att, pat_missed, pat_blocked, pat_pct, gwfg_made, gwfg_att, gwfg_missed, gwfg_blocked, gwfg_distance, pt_att, pt_blocked, pt_long, pt_yards, pt_inside_20, pt_out_of_bounds, pt_downed, pt_touchback, pt_fair_caught, pt_returned, pt_return_yards, pt_return_tds, pt_net_yards
+
+========================================================================
+snap_counts (S4) — 26612 rows × 16 cols
+========================================================================
+game_id, pfr_game_id, season, game_type, week, player, pfr_player_id, position, team, opponent, offense_snaps, offense_pct, defense_snaps, defense_pct, st_snaps, st_pct
+
+========================================================================
+injuries (S5) — 6068 rows × 16 cols
+========================================================================
+season, season_type, game_type, team, week, gsis_id, position, full_name, first_name, last_name, report_primary_injury, report_secondary_injury, report_status, practice_primary_injury, practice_secondary_injury, practice_status
+
+========================================================================
+depth_charts (S6) — 554215 rows × 12 cols
+========================================================================
+dt, team, player_name, espn_id, gsis_id, pos_grp_id, pos_grp, pos_id, pos_name, pos_abb, pos_slot, pos_rank
+
+========================================================================
+schedules (S1) — 285 rows × 46 cols
+========================================================================
+game_id, season, game_type, week, gameday, weekday, gametime, away_team, away_score, home_team, home_score, location, result, total, overtime, old_game_id, gsis, nfl_detail_id, pfr, pff, espn, ftn, away_rest, home_rest, away_moneyline, home_moneyline, spread_line, away_spread_odds, home_spread_odds, total_line, under_odds, over_odds, div_game, roof, surface, temp, wind, away_qb_id, home_qb_id, away_qb_name, home_qb_name, away_coach, home_coach, referee, stadium_id, stadium
+
+========================================================================
+players (S7) — 24820 rows × 39 cols
+========================================================================
+gsis_id, display_name, common_first_name, first_name, last_name, short_name, football_name, suffix, esb_id, nfl_id, pfr_id, pff_id, otc_id, espn_id, smart_id, birth_date, position_group, position, ngs_position_group, ngs_position, height, weight, headshot, college_name, college_conference, jersey_number, rookie_season, last_season, latest_team, status, ngs_status, ngs_status_short_description, years_of_experience, pff_position, pff_status, draft_year, draft_round, draft_pick, draft_team
+
+========================================================================
+Assumption verdicts
+========================================================================
+Tech spec §4.4 assumption checks:
+
+  [PASS] A1 load_player_stats() carries kicking columns
+         found 29 fg_/pat_ cols: ['fg_made', 'fg_att', 'fg_missed', 'fg_blocked', 'fg_long', 'fg_pct', 'fg_made_0_19', 'fg_made_20_29']…
+
+  [PASS] A1b player_stats uses passing_interceptions (not interceptions)
+         passing_interceptions=True interceptions=False
+
+  [PASS] A2 load_depth_charts() covers OL / DB / LB / DL via pos_abb
+         pos_abb present=True; sample=['C', 'FB', 'FS', 'H', 'KR', 'LCB', 'LDE', 'LDT', 'LG', 'LILB', 'LS', 'LT', 'MLB', 'NB', 'NT', 'P', 'PK', 'PR', 'QB', 'RB']
+
+  [PASS] A2b depth chart schema is pos_abb/pos_rank (not week/position/depth_chart_order)
+         week=False position=False depth_chart_order=False pos_abb=True pos_rank=True
+
+  [FAIL (expected) — use A3b crosswalk] A3 load_snap_counts() has gsis_id natively
+         gsis_id=False pfr_player_id=True — FALLBACK: crosswalk via players.pfr_id (hit_rate=99.7%, halt if <95%)
+
+  [PASS] A3b PFR→gsis crosswalk hit rate ≥ 95%
+         hit_rate=99.7% over 2189 snap player ids
+
+  [FAIL (expected) — use play-type + opp-offense fallback] A4 load_team_stats() carries named defense_yards / offense_yards aggregates
+         assumed aggregate cols present=NONE; use offense play cols=['passing_yards', 'rushing_yards', 'carries', 'attempts']; def_* cols=20 (fallback: aggregate opponents' offense)
+
+  [PASS] A5 schedules carry spread_line / total_line
+         spread_line=True total_line=True
+
+
+========================================================================
+Confirmed column map (for sources/schema.py)
+========================================================================
+Depth charts: dt, team, gsis_id, pos_abb, pos_rank (no week / position / depth_chart_order)
+Snap counts: pfr_player_id, offense_pct, offense_snaps (no gsis_id — join players.pfr_id → gsis_id)
+Team stats: passing_yards, rushing_yards, carries, attempts, sacks_suffered, def_sacks, def_tackles_solo, … (no offense_yards / defense_yards / points)
+Player stats: player_id (=gsis_id), passing_interceptions, fg_made, pat_made, fg_made_0_19…fg_made_60_
+Players: gsis_id, pfr_id, display_name, latest_team, position
+
