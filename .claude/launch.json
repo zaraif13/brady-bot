@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "brady-bot",
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["app/run.sh"],
+      "port": 8000
+    }
+  ]
+}
